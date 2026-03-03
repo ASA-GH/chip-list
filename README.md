@@ -38,8 +38,8 @@ npm test
 - **npm start** – запуск dev-сервера (Webpack Dev Server)
 - **npm run** build – продакшн-сборка с предварительным прогоном тестов
 - **npm test** – запуск тестов (Jest)
-- **npm run lint** – проверка кода с помощью ESLint (если настроен)
-- **npm run format** – форматирование кода Prettier (если настроен)
+- **npm run lint** – проверка кода с помощью ESLint
+- **npm run format** – форматирование кода Prettier
 
 ## Структура проекта
 
