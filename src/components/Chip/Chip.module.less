@@ -1,0 +1,40 @@
+@import (reference) "@/styles/variables.less";
+
+.chip {
+  height: @chip-h;
+  padding: @chip-pad;
+  display: flex;
+  align-items: center;
+
+  font-size: @fs-small;
+  font-weight: @fw-semi-bold;
+  color: @chip-text;
+  background-color: @chip-bg;
+  border-radius: @chip-rad;
+
+  cursor: pointer;
+  user-select: none;
+  transition: background-color @effect-transition-base, transform @effect-transition-base;
+
+  &:hover {
+    background-color: @chip-bg-hover;
+  }
+
+  &:active {
+    transform: scale(@effect-scale-active);
+  }
+
+  &.selected {
+    background-color: @chip-bg-sel;
+    color: @chip-text-sel;
+
+    &:hover {
+      background-color: @chip-bg-sel-hover;
+    }
+  }
+
+  &.disabled {
+    opacity: @effect-opacity-disabled;
+    pointer-events: none;
+  }
+}

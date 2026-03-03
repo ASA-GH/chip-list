@@ -1,0 +1,122 @@
+// =============================================================================
+// 1. COLORS (Numeric Scale)
+// =============================================================================
+@raw-clr-white:       #ffffff;
+@raw-clr-gray-100:    #eeeeee;
+@raw-clr-gray-200:    #e0e0e0;
+@raw-clr-gray-700:    #525252;
+@raw-clr-blue-500:    #007bff;
+@raw-clr-blue-700:    #0056b3;
+@raw-clr-black-a15:   rgba(0, 0, 0, 0.15);
+
+// Semantic Roles
+@bg-page:             @raw-clr-white;
+
+// Chip
+@chip-bg:         @raw-clr-gray-100;
+@chip-bg-hover:   @raw-clr-gray-200;
+@chip-text:       @raw-clr-gray-700;
+@chip-bg-sel:     @raw-clr-blue-500;
+@chip-bg-sel-hover: @raw-clr-blue-700;
+@chip-text-sel:   @raw-clr-white;
+
+// Popup
+@popup-bg:         @raw-clr-white;
+
+// =============================================================================
+// 2. TYPOGRAPHY (Fonts & Sizes)
+// =============================================================================
+// Raw Font Sizes
+@raw-fs-12:           12px;
+@raw-fs-18:           18px;
+
+// Raw Font Weights
+@raw-fw-600:          600;
+@raw-fw-700:          700;
+
+// Semantic Roles
+@fs-small:            @raw-fs-12;
+@fs-large:            @raw-fs-18;
+@fw-semi-bold:        @raw-fw-600;
+@fw-bold:             @raw-fw-700;
+@font-family-base:    'Inter', sans-serif;
+
+// =============================================================================
+// 3. SPACING & SIZING (Layout)
+// =============================================================================
+// Raw Spacing
+@raw-sp-0:            0;
+@raw-sp-4:            4px;
+@raw-sp-7:            7px;
+@raw-sp-8:            8px;
+@raw-sp-9:            9px;
+@raw-sp-10:           10px;
+@raw-sp-14:           14px;
+@raw-sp-15:           15px;
+@raw-sp-50:           50px;
+
+// Raw Sizes (Width/Height)
+@raw-sz-20:           20px;
+@raw-sz-38:           38px;
+@raw-sz-320:          320px;
+@raw-sz-370:          370px;
+@raw-sz-1135:         1135px;
+@raw-sz-full:         100%;
+@raw-sz-vw:           100vw;
+@raw-sz-vh:           100vh;
+
+// Semantic Roles
+@full-screen-h:       @raw-sz-vh;
+@full-screen-w:       @raw-sz-vw;
+@container-full:      @raw-sz-full;
+@mobile-breakpoint:   @raw-sz-370;
+
+// App
+@app-container-max-w: @raw-sz-1135;
+@app-container-pad:   @raw-sp-50;
+
+// Chip
+@chip-h:              @raw-sz-38;
+@chip-pad:            @raw-sp-0 @raw-sp-15;
+
+// ChipList
+@chip-list-pad-left:  @raw-sp-8;
+@chip-list-popup-w:   @raw-sz-320;
+@chip-list-dots-w:    @raw-sz-20;
+@chip-list-pl-gap:    @raw-sp-4 @raw-sp-9;
+@chip-list-pl-pad:    @raw-sp-10 @raw-sp-14 @raw-sp-7;
+
+// =============================================================================
+// 4. BORDERS & EFFECTS (Radius, Shadows, Scales)
+// =============================================================================
+// Raw Radius
+@raw-rad-8:           8px;
+@raw-rad-19:          19px;
+
+// Values & Ratios
+@raw-ratio-98:        0.98;
+@raw-ratio-50:        0.5;
+
+// Time
+@raw-time-20s:        0.2s;
+
+// Semantic Roles
+@radius-m:            @raw-rad-8;
+@effect-scale-active: @raw-ratio-98;
+@effect-opacity-disabled: @raw-ratio-50;
+@effect-transition-base: @raw-time-20s ease;
+
+// Chip
+@chip-rad:            @raw-rad-19;
+
+// Popup
+@popup-shadow:        0 4px 12px @raw-clr-black-a15;
+
+// =============================================================================
+// 5. Z-INDEX (Stack Management)
+// =============================================================================
+@raw-z-2000:          2000;
+
+// Semantic Roles
+// Popup
+@popup-z-index:       @raw-z-2000;

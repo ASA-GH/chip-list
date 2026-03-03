@@ -1,0 +1,71 @@
+@import (reference) "@/styles/variables.less";
+
+.list {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  &.isMeasuring {
+    [data-chip-slot],
+    .moreBtn {
+      display: flex !important;
+      visibility: hidden !important;
+      position: absolute !important;
+      pointer-events: none;
+    }
+  }
+}
+
+.slot {
+  flex-shrink: 0;
+  display: flex;
+
+  &.gap {
+    padding-left: @chip-list-pad-left;
+  }
+
+  &.hidden {
+    display: none;
+  }
+}
+
+.moreBtn {
+  flex-shrink: 0;
+  display: flex;
+  padding-left: @chip-list-pad-left;
+
+  &.hidden {
+    display: none;
+  }
+}
+
+.dots {
+  font-size: @fs-large;
+  font-weight: @fw-bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: @chip-list-dots-w;
+}
+
+.popupListChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: @chip-list-pl-gap;
+  padding: @chip-list-pl-pad;
+
+  @media (max-width: @mobile-breakpoint) {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+}
+
+.popup {
+  width: @chip-list-popup-w;
+  @media (max-width: @mobile-breakpoint) {
+    width: max-content;
+  }
+}
